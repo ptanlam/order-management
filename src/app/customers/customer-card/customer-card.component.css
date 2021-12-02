@@ -1,0 +1,16 @@
+mat-card {
+  width: 150px;
+  height: 200px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: ease-in-out 0.2s;
+}
+
+mat-card:hover {
+  margin-top: -5px;
+}
+
+.content-container {
+  height: 82%;
+  overflow-y: hidden;
+}
