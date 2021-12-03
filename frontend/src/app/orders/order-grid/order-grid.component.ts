@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Order } from '../../models';
 
 @Component({
   selector: 'fm-order-grid',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./order-grid.component.css'],
 })
 export class OrderGridComponent implements OnInit {
+  @Input() orderList!: Order[] | null;
+
   constructor() {}
 
   ngOnInit(): void {}

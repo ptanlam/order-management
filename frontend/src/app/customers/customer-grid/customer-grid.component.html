@@ -4,8 +4,8 @@
     <button mat-flat-button color="accent" (click)="addNew()">
       Add customer
     </button>
-  </div>
-  
+  </div> 
+
   <div class="card-container">
     <fm-customer-card *ngFor="let customer of customerList" [customer]="customer">
     </fm-customer-card>

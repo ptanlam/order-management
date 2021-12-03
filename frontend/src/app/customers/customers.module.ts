@@ -11,6 +11,6 @@ import { CustomersComponent } from './customers.component';
     CustomersComponent,
     CustomerCardComponent,
   ],
-  imports: [CustomersRoutingModule, SharedModule],
+  imports: [SharedModule, CustomersRoutingModule],
 })
 export class CustomersModule {}

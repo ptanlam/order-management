@@ -38,7 +38,7 @@ export const ordersReducer = createReducer<OrdersState>(
 );
 
 const getOrdersFeatureState = createFeatureSelector<OrdersState>('orders');
-export const getOrderList = createSelector(
+export const getOrderListSelector = createSelector(
   getOrdersFeatureState,
   (state) => state.list
 );

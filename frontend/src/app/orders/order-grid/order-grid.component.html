@@ -1,1 +1,5 @@
-<p>order-grid works!</p>
+<h1>Orders</h1>
+
+<div *ngIf="orderList" class="container">
+  <fm-order-card *ngFor="let order of orderList" [order]="order"></fm-order-card>
+</div>

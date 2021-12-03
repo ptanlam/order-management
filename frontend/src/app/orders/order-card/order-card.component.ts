@@ -1,15 +1,15 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Order } from '../../models';
 
 @Component({
-  selector: 'app-order-card',
+  selector: 'fm-order-card',
   templateUrl: './order-card.component.html',
-  styleUrls: ['./order-card.component.css']
+  styleUrls: ['./order-card.component.css'],
 })
 export class OrderCardComponent implements OnInit {
+  @Input() order!: Order;
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }

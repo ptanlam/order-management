@@ -1,0 +1,25 @@
+version: '3.9'
+
+services:
+  mssql:
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    container_name: mssql
+    user: root
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=Admin@123
+    volumes:
+      - 'order-cust-mngmnt-data:/var/opt/mssql/data'
+    mem_limit: 2.2Gb
+    healthcheck:
+      test: /opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P ""$$SA_PASSWORD"" -Q "SELECT 1" || exit 1
+      timeout: 45s
+      interval: 10s
+      retries: 10
+    cpus: 0.2
+    ports:
+      - 1433:1433
+
+volumes:
+  order-cust-mngmnt-data:
+    driver: local
