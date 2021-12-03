@@ -1,18 +1,14 @@
 ﻿<Properties StartupConfiguration="{4945F571-F0C2-4516-8F6E-C8C02BF57B29}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="CustomerOrderManagement/Controllers/OrdersController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="CustomerOrderManagement/Startup.cs">
     <Files>
-      <File FileName="CustomerOrderManagement/Controllers/OrdersController.cs" Line="6" Column="1" />
+      <File FileName="CustomerOrderManagement/Controllers/OrdersController.cs" Line="20" Column="55" />
+      <File FileName="CustomerOrderManagement/Startup.cs" Line="22" Column="2" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="CustomerOrderManagement" expanded="True">
-            <Node name="CustomerOrderManagement" expanded="True">
-              <Node name="Controllers" expanded="True">
-                <Node name="OrdersController.cs" selected="True" />
-              </Node>
-              <Node name="Models" expanded="True" />
-            </Node>
+            <Node name="CustomerOrderManagement" expanded="True" selected="True" />
           </Node>
         </State>
       </Pad>
@@ -24,5 +20,5 @@
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.CustomerOrderManagement FirstBuild="True" PreferredExecutionTarget="/Applications/Safari.app" />
+  <MonoDevelop.Ide.ItemProperties.CustomerOrderManagement PreferredExecutionTarget="/Applications/Safari.app" />
 </Properties>

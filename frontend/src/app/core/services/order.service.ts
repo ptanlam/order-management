@@ -1,31 +1,14 @@
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Order } from '../../models';
-import { name, datatype } from 'faker';
-import { of } from 'rxjs';
 
 @Injectable({ providedIn: 'root' })
 export class OrderService {
-  private readonly _orders: Order[];
+  private readonly _serviceUrl = 'https://localhost:5001/orders';
 
-  constructor() {
-    this._orders = [...new Array(20)].map((_, index) => ({
-      id: index,
-      customerName: `${name.firstName()} ${name.lastName()}`,
-      price: datatype.number(),
-      numberOfItems: datatype.number(3),
-    }));
-  }
+  constructor(private readonly _httpClient: HttpClient) {}
 
   getAll() {
-    return of(this._orders);
-  }
-
-  add() {
-    this._orders.push({
-      id: this._orders.length,
-      customerName: `${name.firstName()} ${name.lastName()}`,
-      price: datatype.number(),
-      numberOfItems: datatype.number(3),
-    });
+    return this._httpClient.get<Order[]>(this._serviceUrl);
   }
 }

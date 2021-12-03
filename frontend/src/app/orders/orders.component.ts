@@ -1,11 +1,15 @@
-import { Component } from '@angular/core';
-import { OrderService } from '../core/services';
+import { Component, OnInit } from '@angular/core';
+import { Store } from '@ngrx/store';
+import { ordersActions, State } from './slice';
 
 @Component({
   selector: 'fm-orders',
   template: `<fm-order-grid></fm-order-grid>`,
-  styles: [],
 })
-export class OrdersComponent {
-  constructor(private readonly _orderService: OrderService) {}
+export class OrdersComponent implements OnInit {
+  constructor(private readonly _store: Store<State>) {}
+
+  ngOnInit(): void {
+    this._store.dispatch(ordersActions.getOrderList());
+  }
 }
