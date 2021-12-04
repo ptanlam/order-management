@@ -1,13 +1,12 @@
-namespace CustomerOrderManagement.Models
+namespace CustomerOrderManagement.Entities
 {
     public class Order
     {
         private Order() { }
 
-        public Order(int id, string customerName, double price,
+        public Order(string customerName, double price,
             int numberOfItems)
         {
-            Id = id;
             CustomerName = customerName;
             Price = price;
             NumberOfItems = numberOfItems;

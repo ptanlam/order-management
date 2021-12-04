@@ -1,4 +1,4 @@
-﻿using CustomerOrderManagement.Models;
+﻿using CustomerOrderManagement.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 

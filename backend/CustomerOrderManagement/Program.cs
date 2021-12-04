@@ -17,7 +17,6 @@ namespace CustomerOrderManagement
         {
             var hostConfiguration = new AspNetCoreHostConfiguration()
                     .UseStartup<Startup>()
-                    .UseWebHostBuilder(CreateWebHostBuilder)
                     .UseKestrel()
                     .BlockOnStart();
 
@@ -55,13 +54,6 @@ namespace CustomerOrderManagement
                 .InThreadScope();
 
             return kernel;
-        }
-
-        public static IWebHostBuilder CreateWebHostBuilder()
-        {
-            return new DefaultWebHostConfiguration(null)
-                .ConfigureAll()
-                .GetBuilder();
         }
     }
 }

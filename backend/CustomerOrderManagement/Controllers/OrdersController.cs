@@ -1,4 +1,5 @@
 using System.Threading.Tasks;
+using CustomerOrderManagement.Models;
 using CustomerOrderManagement.Repositories;
 using Microsoft.AspNetCore.Mvc;
 
@@ -19,18 +20,32 @@ namespace CustomerOrderManagement.Controllers
         [HttpGet]
         public async Task<ActionResult> GetOrders()
         {
-            //var orderList = new List<Order>()
-            //{
-            //    new Order(1, "Cristiano Ronaldo", 12_000_000, 3),
-            //    new Order(2, "Lionel Messi", 23_000_000, 4),
-            //    new Order(3, "Fernando Torres", 45_000_000, 5),
-            //    new Order(4, "Thierry Henry", 40_000_000, 6),
-            //    new Order(5, "NeymarJR", 5_000_000, 3),
-            //    new Order(6, "Ibrahimovic", 15_000_000, 4),
-            //};
-
-            var orderList = await _orderRepository.GetAll();
+            var orderList = await _orderRepository.GetAllAsync();
             return Ok(orderList);
+        }
+
+        [HttpGet("{Id:int}", Name = "GetOrder")]
+        public async Task<ActionResult> GetOrder(int id)
+        {
+            var order = await _orderRepository.GetByIdAsync(id);
+            if (order == null) return NotFound();
+            return Ok(order);
+        }
+
+        [HttpPost]
+        public async Task<ActionResult> Add([FromBody] OrderForCreationDto dto)
+        {
+            var order = await _orderRepository.AddAsync(dto);
+            return CreatedAtRoute("GetOrder", new { order.Id }, order);
+        }
+
+        [HttpDelete("{Id:int}")]
+        public async Task<ActionResult> Delete(int id)
+        {
+            var order = await _orderRepository.GetByIdAsync(id);
+            if (order == null) return NotFound();
+            await _orderRepository.DeleteAsync(order);
+            return NoContent();
         }
     }
 }

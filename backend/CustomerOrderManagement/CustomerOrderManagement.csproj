@@ -29,6 +29,8 @@
     <None Remove="Microsoft.EntityFrameworkCore.SqlServer" />
     <None Remove="Data\Configuration\" />
     <None Remove="Microsoft.EntityFrameworkCore.Tools" />
+    <None Remove="Entities\" />
+    <None Remove="Ninject.Web.WebApi.WebHost" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Controllers\" />
@@ -36,6 +38,7 @@
     <Folder Include="Data\" />
     <Folder Include="Repositories\" />
     <Folder Include="Data\Configurations\" />
+    <Folder Include="Entities\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\.editorconfig" />
