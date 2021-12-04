@@ -7,3 +7,13 @@ export const getOrderListSuccess = createAction(
   props<{ orders: Order[] }>()
 );
 export const getOrderListFailure = createAction('[Orders] Get orders failure');
+
+export const addOrder = createAction(
+  '[Orders] Add order',
+  props<{ dto: Omit<Order, 'id'> }>()
+);
+export const addOrderSuccess = createAction(
+  '[Orders] Add order success',
+  props<{ order: Order }>()
+);
+export const addOrderFailure = createAction('[Orders] Add order Failure');

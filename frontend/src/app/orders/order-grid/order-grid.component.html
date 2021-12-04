@@ -1,5 +1,13 @@
-<h1>Orders</h1>
 
-<div *ngIf="orderList" class="container">
-  <fm-order-card *ngFor="let order of orderList" [order]="order"></fm-order-card>
+<div class="container">
+  <div class="head-container">
+    <h1>Orders</h1>
+    <button mat-flat-button color="accent" (click)="onAddClick()">
+      Add order
+    </button>
+  </div>
+
+  <div *ngIf="orderList" class="card-container">
+    <fm-order-card *ngFor="let order of orderList" [order]="order"></fm-order-card>
+  </div>
 </div>

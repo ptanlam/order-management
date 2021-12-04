@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { Order } from '../../models';
 
 @Component({
@@ -8,8 +8,13 @@ import { Order } from '../../models';
 })
 export class OrderGridComponent implements OnInit {
   @Input() orderList!: Order[] | null;
+  @Output() add = new EventEmitter();
 
   constructor() {}
 
   ngOnInit(): void {}
+
+  onAddClick() {
+    this.add.emit();
+  }
 }

@@ -15,12 +15,14 @@ export interface State extends RootState.State {
 export interface OrdersState {
   list: Order[];
   loading: boolean;
+  adding: boolean;
   error: boolean;
 }
 
 const initialState: OrdersState = {
   list: [],
   loading: false,
+  adding: false,
   error: false,
 };
 
@@ -34,6 +36,13 @@ export const ordersReducer = createReducer<OrdersState>(
     ...state,
     loading: false,
     list: action.orders,
+  })),
+
+  on(ordersActions.addOrder, (state) => ({ ...state, adding: true })),
+  on(ordersActions.addOrderSuccess, (state, action) => ({
+    ...state,
+    adding: false,
+    list: [...state.list, action.order],
   }))
 );
 
