@@ -46,6 +46,7 @@ export class CustomerService {
       address: `${address.country()}, ${address.cityName()}`,
       phoneNumber: phone.phoneNumber(),
     });
+    this._customerListSubject$.next([...this._customerList]);
   }
 
   remove(id: number) {

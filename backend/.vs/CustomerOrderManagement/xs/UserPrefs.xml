@@ -1,20 +1,15 @@
 ﻿<Properties StartupConfiguration="{4945F571-F0C2-4516-8F6E-C8C02BF57B29}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="CustomerOrderManagement/Repositories/IOrderRepository.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="CustomerOrderManagement/Controllers/OrdersController.cs">
     <Files>
-      <File FileName="CustomerOrderManagement/Controllers/OrdersController.cs" Line="47" Column="1" />
-      <File FileName="CustomerOrderManagement/Repositories/IOrderRepository.cs" Line="13" Column="25" />
-      <File FileName="CustomerOrderManagement/Repositories/OrderRepository.cs" Line="1" Column="1" />
+      <File FileName="CustomerOrderManagement/Controllers/OrdersController.cs" Line="47" Column="55" />
+      <File FileName="CustomerOrderManagement/Repositories/IOrderRepository.cs" Line="13" Column="37" />
+      <File FileName="CustomerOrderManagement/Repositories/OrderRepository.cs" Line="42" Column="10" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="CustomerOrderManagement" expanded="True">
-            <Node name="CustomerOrderManagement" expanded="True">
-              <Node name="Controllers" expanded="True" />
-              <Node name="Repositories" expanded="True">
-                <Node name="IOrderRepository.cs" selected="True" />
-              </Node>
-            </Node>
+            <Node name="CustomerOrderManagement" expanded="True" />
           </Node>
         </State>
       </Pad>
