@@ -6096,14 +6096,14 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/phanlam/Desktop/Projects/demo-angular/backend/CustomerOrderManagement/CustomerOrderManagement.csproj",
+      "projectUniqueName": "/Users/phanlam/Documents/Projects/demo-angular/backend/CustomerOrderManagement/CustomerOrderManagement.csproj",
       "projectName": "CustomerOrderManagement",
-      "projectPath": "/Users/phanlam/Desktop/Projects/demo-angular/backend/CustomerOrderManagement/CustomerOrderManagement.csproj",
+      "projectPath": "/Users/phanlam/Documents/Projects/demo-angular/backend/CustomerOrderManagement/CustomerOrderManagement.csproj",
       "packagesPath": "/Users/phanlam/.nuget/packages/",
-      "outputPath": "/Users/phanlam/Desktop/Projects/demo-angular/backend/CustomerOrderManagement/obj/",
+      "outputPath": "/Users/phanlam/Documents/Projects/demo-angular/backend/CustomerOrderManagement/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/phanlam/.nuget/NuGet/NuGet.Config"
+        "/Users/phanlam/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
