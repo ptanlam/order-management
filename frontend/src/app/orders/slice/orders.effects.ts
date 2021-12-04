@@ -32,4 +32,15 @@ export class OrdersEffects {
       )
     )
   );
+
+  removeOrder$ = createEffect(() =>
+    this._actions$.pipe(
+      ofType(ordersActions.removeOrder),
+      switchMap(({ id }) =>
+        this._orderService
+          .remove(id)
+          .pipe(map(() => ordersActions.removeOrderSuccess({ id })))
+      )
+    )
+  );
 }

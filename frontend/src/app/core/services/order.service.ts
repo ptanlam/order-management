@@ -15,4 +15,8 @@ export class OrderService {
   add(dto: Omit<Order, 'id'>) {
     return this._httpClient.post<Order>(this._serviceUrl, { ...dto });
   }
+
+  remove(id: number) {
+    return this._httpClient.delete(`${this._serviceUrl}/${id}`);
+  }
 }

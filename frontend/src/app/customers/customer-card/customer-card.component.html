@@ -4,14 +4,16 @@
     <mat-card-subtitle>{{ customer.firstName }}</mat-card-subtitle>
   
     <mat-card-content>
-      <p>Address: {{ customer.address }}</p>
-      <p>Phone number: {{ customer.phoneNumber }}</p>
+      <p><span i18n>Address</span>: {{ customer.address }}</p>
+      <p><span i18n>Phone number</span>: {{ customer.phoneNumber }}</p>
     </mat-card-content>
   </div>
 
   <mat-divider inset></mat-divider>
 
   <mat-card-actions>
-    <button mat-button color="warn" (click)="remove(customer.id)">Delete</button>
+    <button mat-button color="warn" (click)="remove(customer.id)">
+        <span i18n>Delete</span> 
+    </button>
   </mat-card-actions>
 </mat-card>

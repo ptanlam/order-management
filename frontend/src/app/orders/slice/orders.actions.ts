@@ -17,3 +17,12 @@ export const addOrderSuccess = createAction(
   props<{ order: Order }>()
 );
 export const addOrderFailure = createAction('[Orders] Add order Failure');
+
+export const removeOrder = createAction(
+  '[Orders] Remove order',
+  props<{ id: number }>()
+);
+export const removeOrderSuccess = createAction(
+  '[Orders] Remove order success',
+  props<{ id: number }>()
+);

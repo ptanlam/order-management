@@ -43,7 +43,19 @@ export const ordersReducer = createReducer<OrdersState>(
     ...state,
     adding: false,
     list: [...state.list, action.order],
-  }))
+  })),
+
+  on(ordersActions.removeOrderSuccess, (state, action) => {
+    const orderIndex = state.list.findIndex((o) => o.id === action.id);
+
+    return {
+      ...state,
+      list: [
+        ...state.list.slice(0, orderIndex),
+        ...state.list.slice(orderIndex + 1),
+      ],
+    };
+  })
 );
 
 const getOrdersFeatureState = createFeatureSelector<OrdersState>('orders');

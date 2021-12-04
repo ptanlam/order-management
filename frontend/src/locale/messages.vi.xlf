@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en-US" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="6304432362546770951" datatype="html">
+        <source>Địa chỉ</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/customers/customer-card/customer-card.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8121141462865337916" datatype="html">
+        <source>Số điện thoại</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/customers/customer-card/customer-card.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7022070615528435141" datatype="html">
+        <source>Xoá</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/customers/customer-card/customer-card.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/orders/order-card/order-card.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8634025124141616528" datatype="html">
+        <source>Danh sách khách hàng</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/customers/customer-grid/customer-grid.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="601821222548887609" datatype="html">
+        <source>Thêm khachs hàng</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/customers/customer-grid/customer-grid.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7286430803380181008" datatype="html">
+        <source>Mã</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/orders/order-card/order-card.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1642972066115158058" datatype="html">
+        <source>Khách hàng</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/orders/order-card/order-card.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="365739362070538939" datatype="html">
+        <source>Số lượng sản phẩm</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/orders/order-card/order-card.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8894377483833272091" datatype="html">
+        <source>Giá</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/orders/order-card/order-card.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6575195871133210332" datatype="html">
+        <source>Danh sách đơn hàng</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/orders/order-grid/order-grid.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2677850267063130463" datatype="html">
+        <source>Thêm đơn hàng</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/orders/order-grid/order-grid.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
