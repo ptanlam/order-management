@@ -1,3 +1,5 @@
 export const environment = {
-  production: true
+  production: true,
+  environment: $ENV.ENVIRONMENT,
+  serviceUrl: $ENV.SERVICE_URL,
 };

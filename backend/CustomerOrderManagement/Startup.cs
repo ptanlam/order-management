@@ -28,8 +28,7 @@ namespace CustomerOrderManagement
             {
                 opt.AddDefaultPolicy(p =>
                 {
-                    p.WithOrigins("http://localhost:4200");
-                    //p.AllowAnyOrigin();
+                    p.WithOrigins(Configuration["AllowedOrigins"].Split(','));
                     p.AllowAnyHeader();
                     p.AllowAnyMethod();
                 });

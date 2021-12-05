@@ -1,6 +1,35 @@
 version: '3.9'
 
 services:
+  frontend:
+    container_name: demo-angular-frontend
+    build:
+      context: ./frontend
+      args:
+        - SERVICE_URL=http://host.docker.internal:5001
+    ports:
+      - 4200:80
+    mem_limit: 64m
+    cpus: 0.1
+    networks:
+      - order-cust-mngmnt
+
+  backend:
+    container_name: demo-angular-backend
+    build:
+      context: ./backend
+    environment:
+      - AllowedOrigins=http://host.docker.internal:4200
+      - ConnectionStrings__DefaultConnection=Server=host.docker.internal,1433;Database=CustomerOrderManagement;User=SA;Password=Admin@123
+    ports:
+      - 5001:80
+    mem_limit: 64m
+    cpus: 0.1
+    depends_on:
+      - mssql
+    networks:
+      - order-cust-mngmnt
+
   mssql:
     image: mcr.microsoft.com/mssql/server:2019-latest
     container_name: mssql
@@ -19,6 +48,12 @@ services:
     cpus: 0.2
     ports:
       - 1433:1433
+    networks:
+      - order-cust-mngmnt
+
+networks:
+  order-cust-mngmnt:
+    driver: bridge
 
 volumes:
   order-cust-mngmnt-data:

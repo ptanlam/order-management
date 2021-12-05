@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "7Vy4mbyEHnGY+qpOjIbj/wRI62pPMyPjl7Sr/XijplM/66kFTsCstI1RYfewPDZXBgJ8ZSgLzRkL6znneGhiPg==",
+  "dgSpecHash": "nGyqEkwRwChkQfGU9uG/COEeXR66XmL0vMJObtb9mx/H1zsSTyYU7UKqdAgDrfRO00TMEJpEciVyWpn2LgHTug==",
   "success": true,
-  "projectFilePath": "/Users/phanlam/Documents/Projects/demo-angular/backend/CustomerOrderManagement/CustomerOrderManagement.csproj",
+  "projectFilePath": "/Users/phanlam/Projects/demo-angular/backend/CustomerOrderManagement/CustomerOrderManagement.csproj",
   "expectedPackageFiles": [
     "/Users/phanlam/.nuget/packages/humanizer.core/2.8.26/humanizer.core.2.8.26.nupkg.sha512",
     "/Users/phanlam/.nuget/packages/microsoft.csharp/4.7.0/microsoft.csharp.4.7.0.nupkg.sha512",

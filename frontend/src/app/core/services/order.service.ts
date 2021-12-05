@@ -1,10 +1,11 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { environment } from '../../../environments/environment';
 import { Order } from '../../models';
 
 @Injectable({ providedIn: 'root' })
 export class OrderService {
-  private readonly _serviceUrl = 'https://localhost:5001/orders';
+  private readonly _serviceUrl = `${environment.serviceUrl}/orders`;
 
   constructor(private readonly _httpClient: HttpClient) {}
 

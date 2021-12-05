@@ -28,6 +28,7 @@ namespace CustomerOrderManagement
 
         public static IKernel CreateKernel()
         {
+            // https://github.com/lord-executor/Ninject.Web.AspNetCore
             var settings = new NinjectSettings
             {
                 LoadExtensions = false
