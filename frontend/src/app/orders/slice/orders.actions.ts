@@ -10,6 +10,7 @@ export const getOrderListFailure = createAction('[Orders] Get orders failure');
 
 export const addOrder = createAction(
   '[Orders] Add order',
+  // https://www.typescriptlang.org/docs/handbook/utility-types.html#nonnullabletype
   props<{ dto: Omit<Order, 'id'> }>()
 );
 export const addOrderSuccess = createAction(

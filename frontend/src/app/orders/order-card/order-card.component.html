@@ -3,7 +3,7 @@
   <mat-card-subtitle><span i18n>Customer</span>: {{ order.customerName }}</mat-card-subtitle>
   <mat-card-content>
     <h4><span i18n>Number of items</span>: {{ order.numberOfItems }}</h4>
-    <h4><span i18n>Price</span>: {{ order.price | currency:'VND' }}</h4>
+    <h4><span i18n>Price</span>: {{ order.price | addTax | currency:'VND' }}</h4>
   </mat-card-content>
   <mat-card-actions>
     <button mat-flat-button color="warn" (click)="onRemoveClick()">

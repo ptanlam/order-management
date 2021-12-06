@@ -14,7 +14,7 @@
         "outputPath": "/Users/phanlam/Projects/demo-angular/backend/CustomerOrderManagement/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/phanlam/.config/NuGet/NuGet.Config"
+          "/Users/phanlam/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"

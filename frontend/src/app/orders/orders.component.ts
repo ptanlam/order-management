@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Store } from '@ngrx/store';
 import { name } from 'faker';
 import { Observable } from 'rxjs';
@@ -12,7 +12,7 @@ import { getOrderListSelector, ordersActions, State } from './slice';
   template: ` <fm-order-grid [orderList]="orderList$ | async" (add)="add()">
   </fm-order-grid>`,
 })
-export class OrdersComponent implements OnInit {
+export class OrdersComponent implements OnInit, OnDestroy {
   private readonly _sub = new SubSink();
   orderList$!: Observable<Order[]>;
 
@@ -28,6 +28,10 @@ export class OrdersComponent implements OnInit {
       ApplicationEventType.RemoveOrder,
       (id: any) => this._store.dispatch(ordersActions.removeOrder({ id }))
     );
+  }
+
+  ngOnDestroy(): void {
+    this._sub.unsubscribe();
   }
 
   add() {

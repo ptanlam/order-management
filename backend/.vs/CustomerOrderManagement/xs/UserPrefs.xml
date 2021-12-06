@@ -1,17 +1,13 @@
 ﻿<Properties StartupConfiguration="{4945F571-F0C2-4516-8F6E-C8C02BF57B29}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="CustomerOrderManagement/Program.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="CustomerOrderManagement/Controllers/OrdersController.cs">
     <Files>
-      <File FileName="CustomerOrderManagement/appsettings.json" Line="10" Column="21" />
-      <File FileName="CustomerOrderManagement/Startup.cs" Line="1" Column="1" />
-      <File FileName="CustomerOrderManagement/Program.cs" Line="51" Column="87" />
+      <File FileName="CustomerOrderManagement/Controllers/OrdersController.cs" Line="18" Column="74" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="CustomerOrderManagement" expanded="True">
-            <Node name="CustomerOrderManagement" expanded="True">
-              <Node name="Program.cs" selected="True" />
-            </Node>
+            <Node name="CustomerOrderManagement" expanded="True" />
           </Node>
         </State>
       </Pad>

@@ -1,3 +1,4 @@
+using System;
 using System.Threading.Tasks;
 using CustomerOrderManagement.Models;
 using CustomerOrderManagement.Repositories;
@@ -14,7 +15,7 @@ namespace CustomerOrderManagement.Controllers
         public OrdersController(IOrderRepository orderRepository)
         {
             _orderRepository = orderRepository ??
-                throw new System.ArgumentNullException(nameof(orderRepository));
+                throw new ArgumentNullException(nameof(orderRepository));
         }
 
         [HttpGet]
